@@ -8,8 +8,8 @@ Le simulateur de jeu d'instruction peut être exécuté en utilisant le fichier 
 
 Le simulateur de jeu d'instruction prend en charge un ensemble prédéfini d'instructions pour les opérations arithmétiques, logiques et de saut. Les instructions sont définies dans le fichier "instruction_set.py". Les utilisateurs peuvent ajouter de nouvelles instructions en les définissant dans ce fichier.
 
-Le fichier "memory.py" contient la classe pour la mémoire cache. Les utilisateurs peuvent spécifier la taille de la mémoire cache et les adresses qu'ils souhaitent stocker en cache. Les adresses qui ne sont pas stockées en cache sont stockées dans la mémoire principale.
+Le fichier "memory.py" contient la mémoire cache. Les utilisateurs peuvent spécifier la taille de la mémoire cache et les adresses qu'ils souhaitent stocker en cache. Les adresses qui ne sont pas stockées en cache sont stockées dans la mémoire principale.
 
 Le simulateur de jeu d'instruction peut être utilisé à des fins éducatives ou pour tester des programmes qui utilisent un ensemble prédéfini d'instructions. Les utilisateurs sont invités à explorer le code et à le modifier selon leurs besoins.
 
-Nous espérons que ce projet sera utile pour vous et n'hésitez pas à nous contacter si vous avez des questions ou des commentaires !
+J'espère que ce projet sera utile pour vous et n'hésitez pas à me contacter si vous avez des questions ou des commentaires !
