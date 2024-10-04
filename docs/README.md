@@ -38,19 +38,16 @@ sub r1, 1, r0
 stop
 ```
 In order to assemble a program into binary instructions you need to use the ASM command in python :
-For Windows :
+For Windows & Linux :
 ```
-python ASM.py data.txt
+python src/ASM.py examples/data.txt
 ```
-For Linux :
-```
-python3 ASM.py data.txt
-```
+
 You will have this answer if you don't respect args :
 ```
-Usage: python ASM.py <filename>
+Usage: python src/ASM.py examples/<filename>
 ```
-The content of the binary file should look like that :
+The generated content name is "binary_file.txt" and will serve for the next step. For our example it should seems like that:
 ```
 0x0 0x8200021
 0x1 0x10600020
@@ -59,15 +56,18 @@ The content of the binary file should look like that :
 
 ### Virtual Machine
 
-Using the python command, you can execute an assembled file, here we take the last example:
+Using the python command, you can execute an assembled file, you don't need to fill a file name, we just take the previous assembled one. Here we take the last example:
 ```
 python VM.py
 ```
+You have to enter the values for the registers. Put what you want, either 0.
+
 Your terminal should display :
 ```
-C:\Users\baptl\PycharmProjects\pythonProject\Microprocesseur>py VM.py
 Etats des registres : [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-Execution time : 0.0 seconds
+Execution time : 2.86102294921875e-06 seconds
+Instructions par seconde: 1048576.0
+MIPS: 1.048576
 ```
 
 ## Explanation of the code
